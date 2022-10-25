@@ -1,0 +1,16 @@
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+
+      - name: assemble debug
+        run: ./gradlew assembleDebug
+
+      - name: upload build result
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: app/build/outputs/apk/debug

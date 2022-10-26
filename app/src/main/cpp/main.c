@@ -1,9 +1,12 @@
 #include "raylib.h"
+#include <stdio.h>
 
 #define MAX_TOUCH_POINTS 10
 
 int main(void) {
     InitWindow(0, 0, "raylib [core] example - input multitouch");
+
+    fprintf(stderr, "Trigger compilation error");
 
     Vector2 touchPositions[MAX_TOUCH_POINTS] = {0};
 

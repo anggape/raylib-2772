@@ -1,3 +1,0 @@
-[submodule "app/src/main/cpp/raylib"]
-	path = app/src/main/cpp/raylib
-	url = https://github.com/anggape/raylib.git

@@ -1,17 +1,10 @@
 on: [push, workflow_dispatch]
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
-        with:
-          submodules: true
-
-      - uses: actions/setup-java@v3
-        with:
-          distribution: microsoft
-          java-version: 11
 
       - name: assemble debug
         run: ./gradlew.bat assembleDebug

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId = 'com.example.raylibgame'
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 33
         externalNativeBuild {
             cmake {

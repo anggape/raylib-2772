@@ -1,6 +1,7 @@
 CMAKE_MINIMUM_REQUIRED (VERSION 3.22)
 PROJECT (raylib-game)
 
+# replace 4.2.0 with raylib version you wanna use
 SET (RAYLIB_VERSION 4.2.0)
 
 FIND_PACKAGE (raylib ${RAYLIB_VERSION} QUIET) # QUIET or REQUIRED
